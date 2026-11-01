@@ -33,8 +33,7 @@ function TeamDetail() {
     <main>
       <Link to="/">← Volver al inicio</Link>
 
-      <h1>{team.name}</h1>
-      <p>Categoría: {team.category}</p>
+      <h1>{team.name} - {team.category}</h1>
       <p>Liga: {team.league}</p>
 
       <h2>Próximos partidos</h2>

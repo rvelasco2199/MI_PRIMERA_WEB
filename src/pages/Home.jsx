@@ -5,7 +5,7 @@ import MatchCard from '../components/MatchCard'
 
 function getTeamName(teamId) {
   const team = teams.find((item) => item.id === teamId)
-  return team ? team.name : 'Equipo'
+     return team ? `${team.name} (${team.category})` : 'Equipo'
 }
 
 function Home() {
