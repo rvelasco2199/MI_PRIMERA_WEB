@@ -20,8 +20,8 @@
 ## Fase 4 - Desarrollo
 - [x] Crear la página de inicio (versión básica).
 - [x] Crear el listado de equipos.
-- [ ] Crear la página de cada equipo.
-- [ ] Mostrar calendarios y resultados por equipo.
+- [x] Crear la página de cada equipo.
+- [x] Mostrar calendarios y resultados por equipo.
 - [ ] Mostrar las ligas y clasificaciones.
 
 ## Fase 5 - Datos reales
