@@ -1,20 +1,20 @@
 export const teams = [
   {
     id: 1,
-    name: 'Primer equipo',
-    category: 'Senior',
-    league: 'Liga de ejemplo A',
+    name: 'CDE FENIX FUENLABRADA',
+    category: 'SENIOR',
+    league: 'PRIMERA AFICIONADO FS',
   },
   {
     id: 2,
-    name: 'Equipo juvenil',
-    category: 'Juvenil',
-    league: 'Liga de ejemplo B',
+    name: 'CDE FENIX FUENLABRADA',
+    category: 'JUVENIL',
+    league: 'PRIMERA JUVENIL FS',
   },
   {
     id: 3,
-    name: 'Equipo cadete',
-    category: 'Cadete',
-    league: 'Liga de ejemplo C',
+    name: 'CDE FENIX FUENLABRADA',
+    category: 'ALEVIN',
+    league: 'ALEVIN FS 1 FASE',
   },
 ]

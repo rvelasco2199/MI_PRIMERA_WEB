@@ -1,12 +1,26 @@
+:root {
+  --color-primary: #f97316;
+  --color-primary-light: #fff1e6;
+  --color-secondary: #0b3d91;
+  --color-secondary-dark: #082a63;
+  --color-text: #1a1a1a;
+  --color-border: #dddddd;
+  --color-background: #ffffff;
+}
+
 body {
   margin: 0;
   font-family: system-ui, Arial, sans-serif;
-  background-color: #ffffff;
-  color: #1a1a1a;
+  background-color: var(--color-background);
+  color: var(--color-text);
 }
 
 main {
   max-width: 960px;
   margin: 0 auto;
   padding: 2rem 1rem;
+}
+
+a {
+  color: var(--color-secondary);
 }
