@@ -17,16 +17,22 @@ Web del club de fútbol sala para consultar sus equipos, calendarios, resultados
 - JavaScript
 - Git y GitHub
 
+## Documentación
+
+- [Descripción del proyecto](docs/PROJECT.md)
+- [Hoja de ruta](docs/ROADMAP.md)
+- [Decisiones técnicas](docs/DECISIONS.md)
+
 ## Cómo ejecutar el proyecto
 
 1. Instala las dependencias:
-
-- npm install
-
+   ```
+   npm install
+   ```
 2. Arranca el servidor de desarrollo:
-
-- npm run dev
-
+   ```
+   npm run dev
+   ```
 3. Abre `http://localhost:5173/` en el navegador.
 
 ## Estado del proyecto
