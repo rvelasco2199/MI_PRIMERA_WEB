@@ -12,6 +12,8 @@ function StandingsTable({ standings, highlightTeam }) {
             <th>G</th>
             <th>E</th>
             <th>P</th>
+            <th>GF</th>
+            <th>GC</th>
             <th>Pts</th>
           </tr>
         </thead>
@@ -19,7 +21,7 @@ function StandingsTable({ standings, highlightTeam }) {
           {sorted.map((row, index) => (
             <tr
               key={row.team}
-              className={row.team === highlightTeam ? 'highlighted-row' : ''}
+              className={row.isOwnTeam ? 'highlighted-row' : ''}
             >
               <td>{index + 1}</td>
               <td>{row.team}</td>
@@ -27,6 +29,8 @@ function StandingsTable({ standings, highlightTeam }) {
               <td>{row.won}</td>
               <td>{row.drawn}</td>
               <td>{row.lost}</td>
+              <td>{row.goalsFor}</td>
+              <td>{row.goalsAgainst}</td>
               <td>{row.points}</td>
             </tr>
           ))}

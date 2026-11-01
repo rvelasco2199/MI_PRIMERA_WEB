@@ -65,10 +65,14 @@
   text-align: left;
 }
 
-.highlighted-row {
-  background-color: var(--color-primary-light);
-  font-weight: bold;
-}
+   .highlighted-row {
+     background-color: #ffd9b3;
+     font-weight: bold;
+   }
+
+   .highlighted-row td:first-child {
+     border-left: 4px solid #f97316;
+   }
 
 .site-header {
   background-color: var(--color-primary);
