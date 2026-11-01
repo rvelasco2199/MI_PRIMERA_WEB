@@ -40,7 +40,7 @@ export const leagues = [
   },
     {
     id: 3,
-    name: 'ALEVIN FS 1 FASE ',
+    name: 'ALEVIN FS 1 FASE',
     standings: [
       { team: "A.D. ALCORCON F.S. 'A'", played: 3, won: 3, drawn: 0, lost: 0, goalsFor: 31, goalsAgainst: 2, penalty: 0, points: 9 },
       { team: "FUTSALA PINTO - ESCUELA PATRI CHAMORRO 'A'", played: 3, won: 3, drawn: 0, lost: 0, goalsFor: 27, goalsAgainst: 3, penalty: 0, points: 9 },
