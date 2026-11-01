@@ -14,3 +14,23 @@
   margin-top: 0;
   font-size: 1.2rem;
 }
+
+.match-list {
+  display: grid;
+  gap: 1rem;
+}
+
+.match-card {
+  border: 1px solid #dddddd;
+  border-radius: 8px;
+  padding: 1rem;
+}
+
+.match-card h3 {
+  margin-top: 0;
+  font-size: 1.1rem;
+}
+
+.match-score {
+  font-weight: bold;
+}
