@@ -22,7 +22,7 @@
 - [x] Crear el listado de equipos.
 - [x] Crear la página de cada equipo.
 - [x] Mostrar calendarios y resultados por equipo.
-- [ ] Mostrar las ligas y clasificaciones.
+- [x] Mostrar las ligas y clasificaciones.
 
 ## Fase 5 - Datos reales
 - [ ] Organizar los datos de los equipos.
