@@ -1,16 +1,34 @@
-# React + Vite
+# Club de Fútbol Sala
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Web del club de fútbol sala para consultar sus equipos, calendarios, resultados y competiciones.
 
-Currently, two official plugins are available:
+## Objetivos
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- Mostrar los equipos del club.
+- Consultar los próximos partidos.
+- Ver los resultados de los encuentros.
+- Consultar las ligas en las que juega cada equipo.
+- Tener una web adaptada a móviles y ordenadores.
 
-## React Compiler
+## Tecnologías
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- React
+- Vite
+- JavaScript
+- Git y GitHub
 
-## Expanding the ESLint configuration
+## Cómo ejecutar el proyecto
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+1. Instala las dependencias:
+
+- npm install
+
+2. Arranca el servidor de desarrollo:
+
+- npm run dev
+
+3. Abre `http://localhost:5173/` en el navegador.
+
+## Estado del proyecto
+
+En desarrollo. Primera fase: estructura base y documentación.
