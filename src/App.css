@@ -34,3 +34,29 @@
 .match-score {
   font-weight: bold;
 }
+
+.table-wrapper {
+  overflow-x: auto;
+}
+
+.standings-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.standings-table th,
+.standings-table td {
+  padding: 0.5rem;
+  text-align: center;
+  border-bottom: 1px solid #dddddd;
+}
+
+.standings-table th:nth-child(2),
+.standings-table td:nth-child(2) {
+  text-align: left;
+}
+
+.highlighted-row {
+  background-color: #fff3cd;
+  font-weight: bold;
+}

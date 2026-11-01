@@ -1,7 +1,9 @@
 import { Link, useParams } from 'react-router-dom'
 import { teams } from '../data/teams'
 import { matches } from '../data/matches'
+import { leagues } from '../data/leagues'
 import MatchCard from '../components/MatchCard'
+import StandingsTable from '../components/StandingsTable'
 
 function TeamDetail() {
   const { id } = useParams()
@@ -16,6 +18,7 @@ function TeamDetail() {
     )
   }
 
+  const league = leagues.find((item) => item.name === team.league)
   const teamMatches = matches.filter((match) => match.teamId === team.id)
 
   const upcomingMatches = teamMatches
@@ -54,6 +57,16 @@ function TeamDetail() {
             <MatchCard key={match.id} match={match} teamName={team.name} />
           ))}
         </section>
+      )}
+
+      <h2>Clasificación</h2>
+      {league ? (
+        <StandingsTable
+          standings={league.standings}
+          highlightTeam={team.name}
+        />
+      ) : (
+        <p>Todavía no hay clasificación disponible.</p>
       )}
     </main>
   )
