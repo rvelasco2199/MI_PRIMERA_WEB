@@ -13,8 +13,9 @@
 - [x] Documentar cómo ejecutar el proyecto.
 
 ## Fase 3 - Diseño
-- [ ] Definir colores y tipografía.
-- [ ] Diseñar la navegación.
+- [x] Definir los colores del club.
+- [ ] Definir la tipografía.
+- [x] Diseñar la navegación.
 - [ ] Adaptar el diseño a móviles.
 
 ## Fase 4 - Desarrollo
@@ -25,8 +26,9 @@
 - [x] Mostrar las ligas y clasificaciones.
 
 ## Fase 5 - Datos reales
-- [ ] Organizar los datos de los equipos.
-- [ ] Incorporar los resultados reales.
+- [x] Organizar los datos de los equipos.
+- [x] Incorporar las clasificaciones reales.
+- [ ] Incorporar los partidos y resultados reales..
 - [ ] Decidir cómo se actualizarán los datos.
 
 ## Fase 6 - Pruebas y publicación
