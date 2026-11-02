@@ -1,0 +1,58 @@
+export const fixtures = [
+  {
+    leagueId: 1,
+    round: 1,
+    date: '2026-10-03',
+    rest: 'SAD COLEGIO INTERNACIONAL KOLBE (FS)',
+    matches: [
+      { home: 'FUTSALA PINTO - ESCUELA PATRI CHAMORRO', away: "C.D. LA VILLA MOSTOLES 'B'", homeScore: 3, awayScore: 2 },
+      { home: 'C.D. FUTSI ATLETICO NAVALCARNERO - FROZEN', away: "C.D.E. SAN JOSE DE VALDERAS 'B'", homeScore: 1, awayScore: 5 },
+      { home: "C.D. EUROPEO - FUTSAL PARDILLO SVP 'B'", away: "C.D.E. PINAR DE SAN JOSE - ALCORCON 'B'", homeScore: 3, awayScore: 6 },
+      { home: "ATLETICO TRABENCO ZARZAQUEMADA 'C'", away: 'CDE FENIX FUENLABRADA (FS)', homeScore: 3, awayScore: 2, time: null, venue: null },
+      { home: 'C.D.E. INTERSALA MOSTOLES', away: 'CDE BAYONA FUTSAL', homeScore: 4, awayScore: 3 },
+      { home: "C.D.E. ANDRES SEGOVIA MOSTOLES 'B'", away: 'CDE FUTBOL SALA EL ARROYO - GRIÑON', homeScore: 4, awayScore: 5 },
+    ],
+  },
+  {
+    leagueId: 1,
+    round: 2,
+    date: '2026-10-17',
+    rest: 'C.D. FUTSI ATLETICO NAVALCARNERO - FROZEN',
+    matches: [
+      { home: 'CDE FENIX FUENLABRADA (FS)', away: 'C.D.E. INTERSALA MOSTOLES', homeScore: 4, awayScore: 5, time: null, venue: null },
+      { home: 'CDE BAYONA FUTSAL', away: 'FUTSALA PINTO - ESCUELA PATRI CHAMORRO', homeScore: 4, awayScore: 6 },
+      { home: "C.D.E. SAN JOSE DE VALDERAS 'B'", away: "C.D.E. ANDRES SEGOVIA MOSTOLES 'B'", homeScore: 7, awayScore: 3 },
+      { home: 'CDE FUTBOL SALA EL ARROYO - GRIÑON', away: "ATLETICO TRABENCO ZARZAQUEMADA 'C'", homeScore: 3, awayScore: 3 },
+      { home: "C.D.E. PINAR DE SAN JOSE - ALCORCON 'B'", away: 'SAD COLEGIO INTERNACIONAL KOLBE (FS)', homeScore: 3, awayScore: 1 },
+      { home: "C.D. LA VILLA MOSTOLES 'B'", away: "C.D. EUROPEO - FUTSAL PARDILLO SVP 'B'", homeScore: null, awayScore: null },
+    ],
+  },
+  {
+    leagueId: 1,
+    round: 3,
+    date: '2026-10-24',
+    rest: "C.D.E. ANDRES SEGOVIA MOSTOLES 'B'",
+    matches: [
+      { home: "C.D.E. PINAR DE SAN JOSE - ALCORCON 'B'", away: "C.D. LA VILLA MOSTOLES 'B'", homeScore: 8, awayScore: 2 },
+      { home: "ATLETICO TRABENCO ZARZAQUEMADA 'C'", away: "C.D.E. SAN JOSE DE VALDERAS 'B'", homeScore: 4, awayScore: 13 },
+      { home: 'FUTSALA PINTO - ESCUELA PATRI CHAMORRO', away: 'CDE FENIX FUENLABRADA (FS)', homeScore: 4, awayScore: 3, time: null, venue: null },
+      { home: "C.D. EUROPEO - FUTSAL PARDILLO SVP 'B'", away: 'CDE BAYONA FUTSAL', homeScore: 2, awayScore: 10 },
+      { home: 'C.D.E. INTERSALA MOSTOLES', away: 'CDE FUTBOL SALA EL ARROYO - GRIÑON', homeScore: 2, awayScore: 3 },
+      { home: 'SAD COLEGIO INTERNACIONAL KOLBE (FS)', away: 'C.D. FUTSI ATLETICO NAVALCARNERO - FROZEN', homeScore: 4, awayScore: 3 },
+    ],
+  },
+  {
+    leagueId: 1,
+    round: 4,
+    date: '2026-10-31',
+    rest: "ATLETICO TRABENCO ZARZAQUEMADA 'C'",
+    matches: [
+      { home: 'CDE BAYONA FUTSAL', away: "C.D.E. PINAR DE SAN JOSE - ALCORCON 'B'", homeScore: 2, awayScore: 9 },
+      { home: 'C.D. FUTSI ATLETICO NAVALCARNERO - FROZEN', away: "C.D.E. ANDRES SEGOVIA MOSTOLES 'B'", homeScore: 2, awayScore: 1 },
+      { home: "C.D.E. SAN JOSE DE VALDERAS 'B'", away: 'C.D.E. INTERSALA MOSTOLES', homeScore: 6, awayScore: 1 },
+      { home: 'CDE FUTBOL SALA EL ARROYO - GRIÑON', away: 'FUTSALA PINTO - ESCUELA PATRI CHAMORRO', homeScore: 2, awayScore: 0 },
+      { home: "C.D. LA VILLA MOSTOLES 'B'", away: 'SAD COLEGIO INTERNACIONAL KOLBE (FS)', homeScore: 6, awayScore: 9 },
+      { home: 'CDE FENIX FUENLABRADA (FS)', away: "C.D. EUROPEO - FUTSAL PARDILLO SVP 'B'", homeScore: null, awayScore: null, time: null, venue: null },
+    ],
+  },
+]
