@@ -34,7 +34,12 @@ function TeamDetail() {
       <Link to="/">← Volver al inicio</Link>
 
       <h1>{team.name} - {team.category}</h1>
-      <p>Liga: {team.league}</p>
+      <p>{team.league}</p>
+      <p>
+        <Link to={`/equipos/${team.id}/calendario`}>
+          Ver calendario completo
+        </Link>
+      </p>
 
       <h2>Próximos partidos</h2>
       {upcomingMatches.length === 0 ? (
