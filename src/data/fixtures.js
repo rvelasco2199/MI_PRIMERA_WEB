@@ -112,7 +112,7 @@ export const fixtures = [
     date: '2026-12-12',
     rest: "C.D. LA VILLA MOSTOLES 'B'",
     matches: [
-      { home: "C.D.E. FENIX FUENLABRADA (FS)", away: "C.D.E. FUTBOL SALA EL ARROYO - GRIÑON", homeScore: null, awayScore: null, time: null, venue: null },
+      { home: "CDE FENIX FUENLABRADA (FS)", away: "C.D.E. FUTBOL SALA EL ARROYO - GRIÑON", homeScore: null, awayScore: null, time: null, venue: null },
       { home: 'C.D.E. BAYONA FUTSAL', away: "C.D.E. SAN JOSE DE VALDERAS 'B'", homeScore: null, awayScore: null },
       { home: "C.D.E. PINAR DE SAN JOSE - ALCORCON 'B'", away: "C.D. FUTSI ATLETICO NAVALCARNERO - FROZEN", homeScore: null, awayScore: null },
       { home: "C.D. EUROPEO - FUTSAL PARDILLO SVP 'B'", away: "C.D.E. ANDRES SEGOVIA MOSTOLES 'B'", homeScore: null, awayScore: null },
@@ -168,7 +168,7 @@ export const fixtures = [
     date: '2027-01-23',
     rest: "C.D.E. SAN JOSE DE VALDERAS 'B'",
     matches: [
-      { home: "CDE FENIX FUENLABRADA (FS)", away: "C.D.E. ANDRES SEGOVIA MOSTOLES 'B'", homeScore: null, awayScore: null, time: null, venue: null },
+      { home: "C.D.E. FENIX FUENLABRADA (FS)", away: "C.D.E. ANDRES SEGOVIA MOSTOLES 'B'", homeScore: null, awayScore: null, time: null, venue: null },
       { home: 'CDE BAYONA FUTSAL', away: "ATLETICO TRABENCO ZARZAQUEMADA 'C'", homeScore: null, awayScore: null },
       { home: "C.D. LA VILLA MOSTOLES 'B'", away: "C.D.E. INTERSALA MOSTOLES", homeScore: null, awayScore: null },
       { home: "C.D.E. PINAR DE SAN JOSE - ALCORCON 'B'", away: 'FUTSALA PINTO - ESCUELA PATRI CHAMORRO', homeScore: null, awayScore: null },

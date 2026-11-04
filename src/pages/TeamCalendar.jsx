@@ -3,6 +3,13 @@ import { teams } from '../data/teams'
 import { leagues } from '../data/leagues'
 import { fixtures } from '../data/fixtures'
 
+function normalize(name = '') {
+  return name
+    .toUpperCase()
+    .replace(/\(.*?\)/g, '')
+    .replace(/[.\s]/g, '')
+}
+
 function formatDate(date) {
   return new Date(`${date}T00:00`).toLocaleDateString('es-ES', {
     day: 'numeric',
@@ -51,7 +58,9 @@ function TeamCalendar() {
               {round.matches.map((match, index) => {
                 const hasResult =
                   match.homeScore !== null && match.awayScore !== null
-                const isOwn = match.home === ownTeam || match.away === ownTeam
+                   const isOwn =
+                    normalize(match.home) === normalize(ownTeam) ||
+                    normalize(match.away) === normalize(ownTeam)
                 const info = [match.time, match.venue].filter(Boolean).join(' · ')
 
                 return (
