@@ -153,3 +153,9 @@
   font-size: 0.9rem;
   color: #555555;
 }
+
+.match-category {
+  margin: 0 0 0.3rem;
+  font-weight: bold;
+  color: var(--color-secondary);
+}

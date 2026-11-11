@@ -1,21 +1,16 @@
 import { teams } from '../data/teams'
-import { matches } from '../data/matches'
+import { getUpcomingMatches, getPlayedMatches } from '../utils/teamMatches'
 import TeamCard from '../components/TeamCard'
 import MatchCard from '../components/MatchCard'
 
-function getTeamName(teamId) {
-  const team = teams.find((item) => item.id === teamId)
-     return team ? `${team.name} (${team.category})` : 'Equipo'
-}
-
 function Home() {
-  const upcomingMatches = matches
-    .filter((match) => !match.played)
-    .sort((a, b) => a.date.localeCompare(b.date))
+  const nextMatches = teams
+    .map((team) => ({ team, match: getUpcomingMatches(team)[0] }))
+    .filter((item) => item.match)
 
-  const playedMatches = matches
-    .filter((match) => match.played)
-    .sort((a, b) => b.date.localeCompare(a.date))
+  const lastMatches = teams
+    .map((team) => ({ team, match: getPlayedMatches(team)[0] }))
+    .filter((item) => item.match)
 
   return (
     <main>
@@ -28,25 +23,23 @@ function Home() {
         ))}
       </section>
 
-      <h2>Próximos partidos</h2>
+      <h2>Próximo partido</h2>
       <section className="match-list">
-        {upcomingMatches.map((match) => (
-          <MatchCard
-            key={match.id}
-            match={match}
-            teamName={getTeamName(match.teamId)}
-          />
+        {nextMatches.map(({ team, match }) => (
+          <div key={team.id}>
+            <p className="match-category">{team.category}</p>
+            <MatchCard match={match} />
+          </div>
         ))}
       </section>
 
-      <h2>Últimos resultados</h2>
+      <h2>Último resultado</h2>
       <section className="match-list">
-        {playedMatches.map((match) => (
-          <MatchCard
-            key={match.id}
-            match={match}
-            teamName={getTeamName(match.teamId)}
-          />
+        {lastMatches.map(({ team, match }) => (
+          <div key={team.id}>
+            <p className="match-category">{team.category}</p>
+            <MatchCard match={match} />
+          </div>
         ))}
       </section>
     </main>
