@@ -1,7 +1,7 @@
 import { Link, useParams } from 'react-router-dom'
 import { teams } from '../data/teams'
-import { matches } from '../data/matches'
 import { leagues } from '../data/leagues'
+import { getUpcomingMatches, getPlayedMatches } from '../utils/teamMatches'
 import MatchCard from '../components/MatchCard'
 import StandingsTable from '../components/StandingsTable'
 
@@ -19,25 +19,20 @@ function TeamDetail() {
   }
 
   const league = leagues.find((item) => item.name === team.league)
-  const teamMatches = matches.filter((match) => match.teamId === team.id)
-
-  const upcomingMatches = teamMatches
-    .filter((match) => !match.played)
-    .sort((a, b) => a.date.localeCompare(b.date))
-
-  const playedMatches = teamMatches
-    .filter((match) => match.played)
-    .sort((a, b) => b.date.localeCompare(a.date))
+  const upcomingMatches = getUpcomingMatches(team).slice(0, 3)
+  const playedMatches = getPlayedMatches(team).slice(0, 3)
 
   return (
     <main>
       <Link to="/">← Volver al inicio</Link>
 
-      <h1>{team.name} - {team.category}</h1>
-      <p>{team.league}</p>
+      <h1>
+        {team.name} - {team.category}
+      </h1>
+      <p>Liga: {team.league}</p>
       <p>
         <Link to={`/equipos/${team.id}/calendario`}>
-          Ver calendario completo
+          Ver calendario completo de la liga
         </Link>
       </p>
 
@@ -47,28 +42,25 @@ function TeamDetail() {
       ) : (
         <section className="match-list">
           {upcomingMatches.map((match) => (
-            <MatchCard key={match.id} match={match} teamName={team.name} />
+            <MatchCard key={match.round} match={match} />
           ))}
         </section>
       )}
 
-      <h2>Resultados</h2>
+      <h2>Últimos resultados</h2>
       {playedMatches.length === 0 ? (
         <p>Todavía no hay resultados.</p>
       ) : (
         <section className="match-list">
           {playedMatches.map((match) => (
-            <MatchCard key={match.id} match={match} teamName={team.name} />
+            <MatchCard key={match.round} match={match} />
           ))}
         </section>
       )}
 
       <h2>Clasificación</h2>
       {league ? (
-        <StandingsTable
-          standings={league.standings}
-          highlightTeam={team.name}
-        />
+        <StandingsTable standings={league.standings} />
       ) : (
         <p>Todavía no hay clasificación disponible.</p>
       )}

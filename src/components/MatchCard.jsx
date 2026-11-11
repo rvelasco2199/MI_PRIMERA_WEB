@@ -7,15 +7,20 @@ function formatDate(date) {
 }
 
 function MatchCard({ match, teamName }) {
+  const home = match.home ?? teamName
+  const away = match.away ?? match.opponent
+  const info = [match.time, match.venue].filter(Boolean).join(' · ')
+
   return (
     <article className="match-card">
       <h3>
-        {teamName} vs {match.opponent}
+        {home} vs {away}
       </h3>
       <p>
-        {formatDate(match.date)} · {match.time}
+        {match.round ? `Jornada ${match.round} · ` : ''}
+        {formatDate(match.date)}
       </p>
-      <p>{match.venue}</p>
+      {info && <p>{info}</p>}
       {match.played && (
         <p className="match-score">
           Resultado: {match.homeScore} - {match.awayScore}
